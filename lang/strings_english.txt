@@ -1,0 +1,11 @@
+<?php
+# Copyright (c) 2014 Victor Boctor @ MantisHub.com
+# Licensed under the MIT license
+
+# Custom strings for english language
+$s_plugin_MantisTouchRedirect_title = 'MantisTouch Redirect';
+$s_plugin_MantisTouchRedirect_description = 'A plugin that redirects to MantisTouch for mobile browsers';
+$s_plugin_MantisTouchRedirect_config = 'Configuration';
+$s_plugin_MantisTouchRedirect_update_config = 'Update';
+$s_plugin_MantisTouchRedirect_mantistouch_url = 'MantisTouch URL';
+
