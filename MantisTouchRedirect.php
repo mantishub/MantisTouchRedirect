@@ -38,8 +38,8 @@ class MantisTouchRedirectPlugin extends MantisPlugin {
 			return;
 		}
 
-		# Don't redirect anonymous user since MantisTouch doesn't support it.
-		if ( user_is_anonymous( auth_get_current_user_id() ) ) {
+		# Don't redirect in case anonymous access is enabled.
+		if ( config_get( 'allow_anonymous_login' ) == ON ) {
 			return;
 		}
 
