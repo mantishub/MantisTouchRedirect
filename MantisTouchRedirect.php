@@ -38,11 +38,6 @@ class MantisTouchRedirectPlugin extends MantisPlugin {
 			return;
 		}
 
-		# Don't redirect in case anonymous access is enabled.
-		if ( config_get( 'allow_anonymous_login' ) == ON ) {
-			return;
-		}
-
 		if ( !isset( $_SERVER['SCRIPT_NAME'] ) ) {
 			return;
 		}
