@@ -9,8 +9,8 @@ class MantisTouchRedirectPlugin extends MantisPlugin {
 		$this->version = '1.0.0';
 		$this->requires = array( 'MantisCore' => '1.2.0' );
 		$this->author = 'Victor Boctor';
-		$this->contact = 'https://github.com/mantisbt-plugins/MantisTouchRedirect';
-		$this->url = 'https://github.com/mantisbt-plugins/MantisTouchRedirect';
+		$this->contact = 'https://github.com/mantishub/MantisTouchRedirect/';
+		$this->url = 'http://www.mantishub.com';
 		$this->page = 'config';
 	}
 
