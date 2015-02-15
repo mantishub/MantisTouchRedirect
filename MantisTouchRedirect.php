@@ -103,6 +103,12 @@ class MantisTouchRedirectPlugin extends MantisPlugin {
 	 * @return boolean<p>True if Mobile Browser, False on PC Browser</p>
 	 */
 	function is_mobile_browser() {
+		# When the plugin is loaded from a php-cli this is not defined.  A sample scenario is a cronjob calling
+		# the sendmails script.
+		if ( !isset( $_SERVER['HTTP_USER_AGENT'] ) ) {
+			return false;
+		}
+
 		$_SERVER['ALL_HTTP'] = isset( $_SERVER['ALL_HTTP'] ) ? $_SERVER['ALL_HTTP'] : '';
 
 		$t_mobile_browser = false;
