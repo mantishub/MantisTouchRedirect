@@ -115,7 +115,7 @@ class MantisTouchRedirectPlugin extends MantisPlugin {
 
 		$t_agent = strtolower( $_SERVER['HTTP_USER_AGENT'] );
 
-		if ( preg_match( '/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|iphone|ipad|ipod|android|xoom)/i', $t_agent ) ) {
+		if ( preg_match( '/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|iphone|ipod|android|xoom)/i', $t_agent ) ) {
 			$t_mobile_browser = true;
 		}
 
